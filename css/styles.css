@@ -1,0 +1,310 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap');
+
+/* general styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; 
+    color: black;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+/* header */
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* nav bar */
+nav {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #8B4513;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* content box */
+.content-box {
+    background-color: #ffffff;
+    color: black;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #8B4513;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.2);
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* contact form */
+.contact-form {
+    background-color: #ffffff;
+    width: 50%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 3px solid #8B4513;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* heading contact form */
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* form fields */
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* input fields */
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* submit button */
+.contact-form button {
+    width: 100%;
+    background-color: #004d00;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* recipes */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* homepage img */
+.responsive-image {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #8B4513;
+    border-radius: 5px;
+}
+
+/* foods img */
+.recipe-image {
+    max-width: 26%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #8B4513;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* success msg */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.success-message {
+    padding: 40px;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.success-message h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004d00;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    font-size: 1.3rem;
+    color: black;
+}
+
+/* recipe page styling */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #8B4513;
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.serving-size {
+    font-weight: bold;
+    color: #004d00;
+    text-align: center;
+}
+
+.ingredient-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.ingredient {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.instructions {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.cooking-step {
+    margin-bottom: 5px;
+}
+
+/* blockquote styling */
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    border-left: 5px solid #8B4513;
+    padding-left: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d00;
+    color: white;
+    font-family: 'Lora', 'Times New Roman', serif;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* student info */
+.student-info {
+    width: 90%;
+    max-width: 800px;
+    background-color: #004d00;
+    padding: 20px;
+    border: 2px solid #004d00;
+    border-radius: 8px;
+    margin-top: -10px;
+}
+
+.student-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.student-info p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+}
+
+/* footer fix */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+    }
+
+    .recipe-sections {
+        flex-direction: column;
+    }
+
+    .recipe-sections div {
+        width: 100%;
+    }
+
+    .recipe-image, .responsive-image {
+        max-width: 50%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .student-info {
+        padding: 10px;
+        width: 95%;
+    }
+}
+
+/* shake anim for input error */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.error-shake {
+    animation: shake 0.3s ease-in-out;
+    border: 2px solid red !important;
+}
