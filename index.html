@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header id="main-header">
-        <h1>Waleed's Dhaba</h1>
-        <p>Bringing the authentic flavors of Pakistan to your home!</p>
-    </header>
 
     <nav>
         <ul>
@@ -20,23 +16,33 @@
         </ul>
     </nav>
 
-    <section class="content-box">
-        <h2>About Pakistani Cuisine:</h2>
-        <p>Pakistani cuisine is known for it's rich spices, slow-cooked meats, and diverse flavors, blending Mughal, Persian, and South Asian influences.</p>
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Waleed's Dhaba</h1>
+            <p>Bringing the authentic flavors of Pakistan to your home.</p>
+            <a href="recipes.html" class="btn-primary">Explore Recipes</a>
+        <div class="scroll-indicator"></div>
+    </div>
+    </header>
+
+    <section class="page-section">
+        <span class="section-label">Pakistani Cuisine</span>
+        <h2>A Rich Culinary Heritage</h2>
+        <p>Pakistani cuisine is known for its rich spices, slow-cooked meats, and diverse flavors, blending Mughal, Persian, and South Asian influences into something truly unforgettable.</p>
     </section>
 
-    <section class="content-box">
-        <h2>Our History:</h2>
-        <p>Waleed's Dhaba started as a small roadside eatery in Lahore, known for its signature dishes like Biryani and Karahi. Over the years, we’ve grown into a community favorite, bringing authentic flavors to your doorstep.</p>
-        <img src="images/kitchen-placeholder.jpg" alt="Waleed's Dhaba Kitchen" class="responsive-image">
+    <section class="page-section">
+        <span class="section-label">Our Story</span>
+        <h2>How It All Began</h2>
+        <p>Waleed's Dhaba started as a small roadside eatery in Lahore, known for its signature dishes like Biryani and Karahi. Over the years, we've grown into a community favourite, bringing authentic flavours to your doorstep.</p>
     </section>
 
-    <section class="content-box">
-        <h2>Our Location:</h2>
+    <section class="page-section">
+        <span class="section-label">Find Us</span>
+        <h2>Our Location</h2>
         <address class="location">
             <p>
-                <span>Visit us at:</span>
-                <i class="location-icon">📍</i>
+                <i>📍</i>
                 <a href="https://maps.app.goo.gl/XLRXapYx9XyrgZfx8" target="_blank" class="map-link">
                     Canvas The Old Fire Station, Aston Street.
                 </a>
@@ -44,27 +50,38 @@
         </address>
     </section>
 
-    <section class="content-box">
-        <h2>Signature Dishes:</h2>
-        <ul>
-            <li>Biryani</li>
-            <li>Karahi</li>
-            <li>Gulab Jamun</li>
+    <section class="page-section">
+        <span class="section-label">On The Menu</span>
+        <h2>Signature Dishes</h2>
+        <ul class="dishes-grid">
+            <li class="dish-item">Biryani</li>
+            <li class="dish-item">Karahi</li>
+            <li class="dish-item">Gulab Jamun</li>
         </ul>
     </section>
 
-    <section class="content-box">
-        <h2>Our Recipes:</h2>
-        <p><a href="recipes.html">View Our Recipes</a></p>
+    <section class="page-section">
+        <span class="section-label">What People Say</span>
+        <blockquote>
+            "The most authentic Pakistani cuisine I've ever had! <em>The Biryani was absolutely perfect.</em>"
+            — <em>Adeel Chaudry, Pakistan's top food critic</em>
+        </blockquote>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Cook?</h2>
+        <a href="recipes.html" class="btn-primary">View Our Recipes</a>
     </section>
 
     <footer>
         <section class="student-info">
-            <h2>Student Information:</h2>
+            <h2>Student Information</h2>
             <p><strong>Name:</strong> Waleed Jawad</p>
-            <p><strong>Email Address:</strong> <a href="mailto:240048282@aston.ac.uk">240048282@aston.ac.uk</a></p>
+            <p><strong>Email:</strong> <a href="mailto:240048282@aston.ac.uk">240048282@aston.ac.uk</a></p>
             <p><strong>Student Number:</strong> 240048282</p>
         </section>
     </footer>
+
+    <script src="js/animations.js"></script>
 </body>
 </html>

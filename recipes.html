@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header id="main-header">
         <h1>Our Recipes</h1>
+        <p>Authentic Pakistani dishes, made for your kitchen.</p>
     </header>
 
     <nav>
@@ -20,10 +22,14 @@
     </nav>
 
     <section class="content-box recipe">
+        <img src="images/biryani.jpg" alt="Chicken Biryani" class="recipe-image">
         <h2 class="title">Chicken Biryani</h2>
         <p class="description">A fragrant rice dish made with aromatic spices and marinated chicken.</p>
-        <p class="serving-size"><strong>Serving Size:</strong> 4</p>
-        <p><strong>Prep Time:</strong> 30 mins | <strong>Cook Time:</strong> 60 mins</p>
+        <div class="recipe-meta">
+            <span class="badge">Serves 4</span>
+            <span class="badge">Prep: 30 mins</span>
+            <span class="badge">Cook: 60 mins</span>
+        </div>
         <h3>Ingredients</h3>
         <ul class="ingredient-list">
             <li class="ingredient">2 cups basmati rice</li>
@@ -44,14 +50,17 @@
             <li class="cooking-step">Fry onions until golden, then add chicken.</li>
             <li class="cooking-step">Cook rice separately, then layer with chicken.</li>
         </ol>
-        <img src="images/biryani.jpg" alt="Chicken Biryani" class="recipe-image">
     </section>
 
     <section class="content-box recipe">
+        <img src="images/mutton-karahi.jpg" alt="Mutton Karahi" class="recipe-image">
         <h2 class="title">Mutton Karahi</h2>
         <p class="description">A rich, spicy tomato-based mutton dish cooked in a wok.</p>
-        <p class="serving-size"><strong>Serving Size:</strong> 4</p>
-        <p><strong>Prep Time:</strong> 20 mins | <strong>Cook Time:</strong> 50 mins</p>
+        <div class="recipe-meta">
+            <span class="badge">Serves 4</span>
+            <span class="badge">Prep: 20 mins</span>
+            <span class="badge">Cook: 50 mins</span>
+        </div>
         <h3>Ingredients</h3>
         <ul class="ingredient-list">
             <li class="ingredient">500g mutton, cut into pieces</li>
@@ -75,14 +84,17 @@
             <li class="cooking-step">Add tomatoes and cook until the oil separates.</li>
             <li class="cooking-step">Garnish with green chilies and serve hot.</li>
         </ol>
-        <img src="images/mutton-karahi.jpg" alt="Mutton Karahi" class="recipe-image">
     </section>
 
     <section class="content-box recipe">
+        <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" class="recipe-image">
         <h2 class="title">Gulab Jamun</h2>
         <p class="description">Delicious deep-fried milk dumplings soaked in sugar syrup.</p>
-        <p class="serving-size"><strong>Serving Size:</strong> 8</p>
-        <p><strong>Prep Time:</strong> 15 mins | <strong>Cook Time:</strong> 20 mins</p>
+        <div class="recipe-meta">
+            <span class="badge">Serves 8</span>
+            <span class="badge">Prep: 15 mins</span>
+            <span class="badge">Cook: 20 mins</span>
+        </div>
         <h3>Ingredients</h3>
         <ul class="ingredient-list">
             <li class="ingredient">1 cup milk powder</li>
@@ -107,19 +119,12 @@
             <li class="cooking-step">Boil sugar and water to make syrup, then add cardamom powder.</li>
             <li class="cooking-step">Soak the fried balls in the syrup for 2 hours and serve.</li>
         </ol>
-        <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" class="recipe-image">
-    </section>
-
-    <section class="content-box">
-        <h2>A review from Pakistan's top food critic:</h2>
-        <blockquote>
-            "The most authentic Pakistani cuisine I've ever had! <em>The Biryani was absolutely perfect.</em>"  
-            - <em>Adeel Chaudry</em>
-        </blockquote>
     </section>
 
     <footer>
         <p>&copy; 2025 Waleed's Dhaba</p>
     </footer>
+
+    <script src="js/animations.js"></script>
 </body>
 </html>

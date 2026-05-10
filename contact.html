@@ -7,61 +7,64 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header-container">
-        <header id="contact-header">
-            <h1>Contact Us</h1>
-        </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="contact-header">
+        <h1>Contact Us</h1>
+        <p>Book a private cooking lesson with Waleed's Dhaba.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-section">
+        <div class="contact-form">
+            <h2>Book a Lesson</h2>
+
+            <form id="contactForm" onsubmit="return validateForm();">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@aston.ac.uk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmEmail">Confirm Email</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="example@aston.ac.uk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredContact">Preferred Contact</label>
+                    <select id="preferredContact" name="preferredContact" required>
+                        <option value="" disabled selected>Select a contact method</option>
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required min="2025-02-18">
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-
-    <section class="contact-form">
-        <h2>Book a private cooking lesson!</h2> 
-
-        <form id="contactForm" onsubmit="return validateForm();">
-            <div class="form-group">
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@aston.ac.uk" required>
-            </div>
-
-            <div class="form-group">
-                <label for="confirmEmail">Confirm Email:</label>
-                <input type="email" id="confirmEmail" name="confirmEmail" placeholder="example@aston.ac.uk" required>
-            </div>
-
-            <div class="form-group">
-                <label for="preferredContact">Preferred Contact:</label>
-                <select id="preferredContact" name="preferredContact" required>
-                    <option value="" disabled selected>-- Select a Contact Method --</option> 
-                    <option value="Email">Email</option>
-                    <option value="Phone">Phone</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="appointmentDate">Select Appointment Date:</label>
-                <input type="date" id="appointmentDate" name="appointmentDate" required min="2025-02-18">
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
 
     <footer>
         <p>Email us: <a href="mailto:waleedsdhaba@email.com">waleedsdhaba@email.com</a></p>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
